@@ -1,0 +1,18 @@
+PASS Desktop home no horizontal overflow {"ok":true,"width":1440,"scrollWidth":1425,"offenders":[]}
+PASS Desktop create no horizontal overflow {"ok":true,"width":1440,"scrollWidth":1425,"offenders":[]}
+PASS Desktop about no horizontal overflow {"ok":true,"width":1440,"scrollWidth":1425,"offenders":[]}
+PASS Desktop explore no horizontal overflow {"ok":true,"width":1440,"scrollWidth":1425,"offenders":[]}
+PASS Desktop creators no horizontal overflow {"ok":true,"width":1440,"scrollWidth":1425,"offenders":[]}
+PASS Empty publish counters
+PASS Live counters, preview and publish progress
+PASS Mobile create no horizontal overflow {"ok":true,"width":390,"scrollWidth":390,"offenders":[]}
+PASS Mobile about no horizontal overflow {"ok":true,"width":390,"scrollWidth":390,"offenders":[]}
+PASS Mobile home no horizontal overflow {"ok":true,"width":390,"scrollWidth":390,"offenders":[{"tag":"DIV","cls":"stage-orbit","right":406.87259674072266,"left":-38.231956481933594},{"tag":"DIV","cls":"stage-orbit second","right":408.0436897277832,"left":-32.2780876159668}]}
+PASS 768 create no horizontal overflow {"ok":true,"width":768,"scrollWidth":753,"offenders":[]}
+PASS 768 explore no horizontal overflow {"ok":true,"width":768,"scrollWidth":753,"offenders":[]}
+PASS 768 about no horizontal overflow {"ok":true,"width":768,"scrollWidth":753,"offenders":[]}
+PASS 1024 create no horizontal overflow {"ok":true,"width":1024,"scrollWidth":1009,"offenders":[]}
+PASS 1024 explore no horizontal overflow {"ok":true,"width":1024,"scrollWidth":1009,"offenders":[]}
+PASS 1024 about no horizontal overflow {"ok":true,"width":1024,"scrollWidth":1009,"offenders":[]}
+PASS Alternate theme home no horizontal overflow {"ok":true,"width":1440,"scrollWidth":1425,"offenders":[]}
+PASS No runtime or resource errors 

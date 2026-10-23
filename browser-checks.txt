@@ -1,0 +1,17 @@
+PASS Desktop has no horizontal overflow
+PASS Refined gallery dark theme renders
+PASS Theme toggle works
+PASS Original artwork title in detail
+PASS Order status is confirmed
+PASS Record and file hashes verify
+PASS Published metadata persists
+PASS Mobile homepage has no horizontal overflow
+PASS Mobile explore has no overflow
+PASS Mobile create has no overflow
+PASS Mobile verify has no overflow
+PASS Mobile creators has no overflow
+PASS Mobile collection has no overflow
+PASS Mobile orders has no overflow
+PASS Mobile about has no overflow
+PASS Mobile gallery has no overflow
+PASS No JavaScript errors or failed resource requests: 

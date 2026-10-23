@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Magellano - NFT Marketplace Website Template by Ansonika">
+    <meta name="author" content="Ansonika">
+    <title>艺链 - 中国卓越的数字艺术品交易平台</title>
+
+    <!-- FAVICONS-->
+    <link rel="shortcut icon" href="https://www.ansonika.com/magellano/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.ansonika.com/magellano/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="https://www.ansonika.com/magellano/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="https://www.ansonika.com/magellano/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="https://www.ansonika.com/magellano/img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE FONT -->
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" as="fetch" crossorigin="anonymous">
+    <script type="text/javascript">
+    !function(e,n,t){"use strict";var o="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap",r="__3perf_googleFonts_c2536";function c(e){(n.head||n.body).appendChild(e)}function a(){var e=n.createElement("link");e.href=o,e.rel="stylesheet",c(e)}function f(e){if(!n.getElementById(r)){var t=n.createElement("style");t.id=r,c(t)}n.getElementById(r).innerHTML=e}e.FontFace&&e.FontFace.prototype.hasOwnProperty("display")?(t[r]&&f(t[r]),fetch(o).then(function(e){return e.text()}).then(function(e){return e.replace(/@font-face {/g,"@font-face{font-display:swap;")}).then(function(e){return t[r]=e}).then(f).catch(a)):a()}(window,document,localStorage);
+    </script>
+
+    <!-- BASE CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="static/css/style.css" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <link href="static/css/home.css" rel="stylesheet">
+	<link href="static/css/particles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Page Preload -->
+				
+	<header class="header clearfix element_to_stick">
+	    <div class="layer"></div><!-- Opacity Mask Menu Mobile -->
+	    <div class="container">
+	       <div class="logo">
+	            <a href="">
+	                <img src="static/picture/yilian.png" alt="" width="140" height="85" class="dark">
+	                <img src="static/picture/yilian.png" alt="" width="140" height="35" class="light">
+	            </a>
+	        </div>
+	        <ul class="top_menu">
+	        	<li>
+	        		<span class="color_mode_bt">
+	        			<input id="theme_toggle" type="checkbox" name="theme_toggle">
+						<label for="theme_toggle"></label>
+	        		</span>
+				</li>
+	            <li><a href="login.html" class="btn_access">登录/注册</a></li>
+	            <li><a href="connect-wallet.html" class="btn_access">连接电子钱包</a></li>
+				<li><a href="http://192.168.243.132:5002/WeBASE-Front/?#/home" class="btn_access">Webase</a></li>
+	        </ul>
+	        <!-- /top_menu -->
+	        <a href="#0" class="open_close">
+	            <i class="bi bi-list"></i><span>Menu</span>
+	        </a>
+	        <nav class="main-menu">
+	            <div id="header_menu">
+	                <a href="#0" class="open_close">
+	                    <i class="bi bi-x"></i>
+	                </a>
+	                <a href="" class="logo_menu">
+	                	<img src="static/picture/logo-placeholder.png" data-src="img/logo.svg" alt="" width="120" height="30" class="dark lazy">
+	                	<img src="static/picture/logo-placeholder.png" data-src="img/logo-light-mode.svg" alt="" width="120" height="30" class="light lazy">
+	                </a>
+	            </div>
+	            <ul>
+	                <li class="submenu">
+	                    <a href="" class="show-submenu">首页</a>
+	                </li>
+	                <li class="submenu">
+	                    <a href="grid-listing-1.html" class="show-submenu">全部商品</a>
+	                </li>
+	                <li class="submenu">
+	                    <a href="#0" class="show-submenu">个人中心</a>
+	                    <ul>
+	                        <li><a href="become-author.html">成为创作者</a></li>
+							<li><a href="author.html">个人空间</a></li>
+	                        <li><a href="author-edit-profile.html">编辑个人信息</a></li>
+	                        <li><a href="upload-artwork.html">上传作品</a></li>
+	                        <li><a href="account-settings.html">账户设置</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </nav>
+	    </div>
+	</header>
+	<!-- /header -->
+	
+	<main>
+
+	    <div class="hero_single version_2 jarallax" data-jarallax="">
+		<div class='wrap'> <div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div><div class='c'></div></div>	
+	    	<img class="jarallax-img" src="static/picture/hero_general.jpg" alt="">
+			
+	        <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-xl-9 col-lg-10">
+	                        <h1 class="slide-animated one">发现, 收集,<br>交易非凡的数字艺术品</h1>
+	                        <p class="slide-animated two">中国卓越的数字艺术品交易平台</p>
+	                        <form method="post" action="grid-listing-1.html" class="slide-animated three">
+	                            <div class="row g-0 custom-search-input">
+	                                <div class="col-md-9">
+	                                    <div class="form-group">
+	                                        <input class="form-control" type="text" placeholder="寻找您想要的">
+	                                    </div>
+	                                </div>
+	                                <div class="col-md-3">
+	                                    <input type="submit" value="搜索">
+	                                </div>
+	                            </div>
+	                            <!-- /row -->
+	                            <div class="search_trends">
+	                                <h5>搜索方向:</h5>
+	                                <ul>
+	                                    <li><a href="#0">数字艺术</a></li>
+	                                    <li><a href="#0">中国风</a></li>
+	                                    <li><a href="#0">字画</a></li>
+	                                </ul>
+	                            </div>
+	                        </form>
+	                    </div>
+	                </div>
+	                <!-- /row -->
+	            </div>
+	        </div>
+	        <div class="wave hero"></div>
+	    </div>
+	    <!-- /hero_single -->
+
+	    <div class="container margin_90_90">
+	        <div class="main_title center">
+	            <span><em></em></span>
+	            <h2>特色商品</h2>
+	            <p>真正贵的不是价格，是价值。</p>
+	        </div>
+	        <!-- /main_title -->
+
+	        <div class="owl-carousel owl-theme featured_carousel" data-cue="slideInUp">
+	            <div class="item">
+	                <div class="strip">
+	                    <figure>
+	                        <a href="#modal-dialog" class="btn_1 modal_popup">出价</a>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-1.jpg" class="owl-lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>神奇的艺术</h3>
+	                                <small>¥ 1628</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb veryfied"><i class="bi bi-check"></i>
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" alt="" class="owl-lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@George_luke</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /item -->
+	            <div class="item">
+	                <div class="strip">
+	                    <figure>
+	                        <a href="#modal-dialog" class="btn_1 modal_popup">出价</a>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-3.jpg" class="owl-lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>蓝海之痛</h3>
+	                                <small>¥ 1999</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb veryfied"><i class="bi bi-check"></i>
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar1.jpg" alt="" class="owl-lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@George Lucas</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /item -->
+	            <div class="item">
+	                <div class="strip">
+	                    <div data-countdown="2022/03/15" class="countdown"></div>
+	                    <figure>
+	                        <a href="#modal-dialog" class="btn_1 modal_popup">出价</a>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-4.jpg" class="owl-lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>抽象</h3>
+	                                <small>¥ 889</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar3.jpg" alt="" class="owl-lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@Mario_1988</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /item -->
+	            <div class="item">
+	                <div class="strip">
+	                    <figure>
+	                        <a href="#modal-dialog" class="btn_1 modal_popup">Place a bid</a>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-5.jpg" class="owl-lazy" alt="" width="533" height="400">
+	                        <a href="author.html" class="author">
+	                        </a>
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>雨林</h3>
+	                                <small>¥ 1368</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb veryfied"><i class="bi bi-check"></i>
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar4.jpg" alt="" class="owl-lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@Tomas_Clue</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /item -->
+	            <div class="item">
+	                <div class="strip">
+	                    <figure>
+	                        <a href="#modal-dialog" class="btn_1 modal_popup">Place a bid</a>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-6.jpg" class="owl-lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>狮子王</h3>
+	                                <small>¥ 998</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar1.jpg" alt="" class="owl-lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@Pixel_inc</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /item -->
+	            <div class="item">
+	                <div class="strip">
+	                    <figure>
+	                        <a href="#modal-dialog" class="btn_1 modal_popup">Place a bid</a>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-7.gif" class="owl-lazy" alt="" width="598" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>驶向中心</h3>
+	                                <small>¥ 2398</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb veryfied"><i class="bi bi-check"></i>
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar3.jpg" alt="" class="owl-lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@Marc_Osl</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /item -->
+	        </div>
+	        <!-- /carousel -->
+	        <p class="text-center mt-4" data-cue="slideInUp"><a href="grid-listing-1.html" class="btn_1 medium pulse_bt">开始搜索</a></p>
+	    </div>
+	    <!-- /container -->
+
+	    <div class="bg_gray">
+	        <div class="container margin_120_90">
+	            <div class="main_title version_2">
+	                <span><em></em></span>
+	                <h2>每周顶端创作者</h2>
+	                <p>好的灵感，好的作品。</p>
+	                <a href="#0">全部查看 <i class="bi bi-arrow-right"></i></a>
+	            </div>
+	            <!-- /main_title -->
+
+	            <div class="row author_list">
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>1</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar1.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@George_lucas</h6>
+	                            <span>成交额：¥ 13869</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>2</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@George_bite</h6>
+	                            <span>成交额：¥ 11968</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>3</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar3.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@Monica_claus</h6>
+	                            <span>成交额：¥ 10386</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>4</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar4.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@Mad_max</h6>
+	                            <span>成交额：¥ 9657</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>5</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar5.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@Fredrick_green</h6>
+	                            <span>成交额：¥ 9237</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>6</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar6.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@Paul_best</h6>
+	                            <span>成交额：¥ 8769</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>7</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar7.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@Mike_ansonika</h6>
+	                            <span>成交额：¥ 8015</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>8</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar8.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@Robert_gain</h6>
+	                            <span>成交额：¥ 7769</span>
+	                        </div>
+	                    </a>
+	                </div>
+	                <div class="col-lg-4 col-md-6" data-cue="slideInUp">
+	                    <a href="author.html" class="author">
+	                        <strong>9</strong>
+	                        <div class="author_thumb veryfied">
+	                            <i class="bi bi-check"></i>
+	                            <figure>
+	                                <img src="static/picture/avatar-placeholder.png" data-src="img/avatar9.jpg" alt="" class="lazy" width="100" height="100">
+	                            </figure>
+	                        </div>
+	                        <div>
+	                            <h6>@George_lucas</h6>
+	                            <span>成交额：¥ 9.9</span>
+	                        </div>
+	                    </a>
+	                </div>
+	            </div>
+	            <!-- /row -->
+
+	            <div class="banner mt-5 lazy" data-bg="url(img/banner_bg.jpg)" data-cue="slideInUp">
+	            	<div class="d-flex align-items-center opacity-mask justify-content-between p-5" data-opacity-mask="rgba(0, 0, 0, 0.2)">
+						<div>
+							<small>加入社区</small>
+							<h3>成为创作者</h3>
+							<p>开始售卖你的艺术品，来赚取可观的利润！</p>
+						</div>
+						<div><a href="become-author.html" class="btn_1 medium pulse_bt">立即加入</a></div>
+					</div>
+					<!-- /wrapper -->
+	            </div>
+	            <!-- /banner -->
+
+	        </div>
+	        <!-- /container -->
+	    </div>
+	    <!-- /bg_gray -->
+
+	    <div class="container margin_120_90">
+	        <div class="main_title version_2">
+	            <span><em></em></span>
+	            <h2>新作品</h2>
+	            <p>真正的艺术来自于源源不断的灵感。</p>
+	            <a href="#0">查看全部 <i class="bi bi-arrow-right"></i></a>
+	        </div>
+	        <!-- /main_title -->
+
+	        <div class="row justify-content-center">
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-8.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>迷失的女人</h3>
+	                                <small>¥ 1028</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Jhonny_Bet</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-9.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>隐藏的坠落</h3>
+	                                <small>¥ 688</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb veryfied"><i class="bi bi-check"></i>
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar4.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Gregory</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-10.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>时钟海洋</h3>
+	                                <small>¥ 558</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar4.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Robert98</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-11.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>你好，世界！</h3>
+	                                <small>¥ 956</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar3.jpg" alt="" class="lazy" width="100" height="100">
+	                                    </figure>
+	                                </div>
+	                                <h6>@Salazar</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-12.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>头脑风暴</h3>
+	                                <small>¥ 1137</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar1.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Bennet_corp</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-6.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>狮子王</h3>
+	                                <small>¥ 998</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar1.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Pixel_inc</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-7.gif" class="lazy" alt="" width="598" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>驶向中心</h3>
+	                                <small>¥ 2398</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb veryfied"><i class="bi bi-check"></i>
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar3.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Marc_Osl</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-cue="slideInUp">
+	                <div class="strip">
+	                    <figure>
+	                        <img src="static/picture/item-1-placeholder.png" data-src="img/items/item-8.jpg" class="lazy" alt="" width="533" height="400">
+	                        <a href="detail-page.html" class="strip_info">
+	                            <div class="item_title">
+	                                <h3>迷失的女人</h3>
+	                                <small>¥ 1028</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li>
+	                            <a href="author.html" class="author">
+	                                <div class="author_thumb">
+	                                    <figure>
+	                                        <img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" alt="" class="lazy" width="100" height="100"></figure>
+	                                </div>
+	                                <h6>@Jhonny_Bet</h6>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#0" class="wish_bt"><i class="bi bi-heart-fill"></i></a> 50
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	        </div>
+	        <!-- /row -->
+	        <p class="text-center mt-4" data-cue="slideInUp"><a href="grid-listing-1.html" class="btn_1 gradient pulse_bt">查看新作品</a></p>
+	    </div>
+	    <!-- /container -->
+
+	    <div class="bg_gray">
+	        <div class="container margin_120_90">
+	            <div class="main_title center mb-5">
+	                <span><em></em></span>
+	                <h2>创作并销售你的作品</h2>
+	                <p>这里是梦的开始！</p>
+	            </div>
+	            <div class="row justify-content-md-center how_2">
+	                <div class="col-lg-5 text-center">
+	                    <figure class="mb-5">
+	                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/web_wireframe.svg" alt="" class="img-fluid lazy" width="360" height="380">
+	                    </figure>
+	                </div>
+	                <div class="col-lg-5">
+	                    <ul>
+	                        <li data-cue="slideInUp">
+	                            <h3><span>#01.</span> 创建你的钱包</h3>
+	                            <p>创建并设置好你的钱包，以便于管理你的收益及支出。</p>
+	                        </li>
+	                        <li data-cue="slideInUp">
+	                            <h3><span>#02.</span> 添加你的作品</h3>
+	                            <p>将你的作品添加进去。</p>
+	                        </li>
+	                        <li data-cue="slideInUp">
+	                            <h3><span>#03.</span> 出售你的作品</h3>
+	                            <p>出售你的作品以获得利润！</p>
+	                        </li>
+	                    </ul>
+	                    <p class="add_top_30" data-cue="slideInUp"><a href="become-author.html" class="btn_1">开始销售</a></p>
+	                </div>
+	                <!-- /row -->
+	            </div>
+	        </div>
+	        <!-- /container -->
+	    </div>
+	    <!-- /bg_gray -->
+
+	    <div class="container margin_120_90">
+	    	<div class="main_title version_2">
+	            <span><em></em></span>
+	            <h2>最新消息</h2>
+	            <p>最新咨询，快人一步！</p>
+	            <a href="#0">查看全部<i class="bi bi-arrow-right"></i></a>
+	        </div>
+	        <!-- /main_title -->
+
+	    	<div class="row">
+			    <div class="col-lg-4" data-cue="slideInUp">
+			        <article class="blog">
+			            <figure>
+			                <a href="blog-post.html"><img src="static/picture/item-blog-placeholder.png" data-src="img/blog-5.jpg" alt="" class="lazy" width="800" height="533">
+			                </a>
+			            </figure>
+			            <div class="post_info">
+			                <small>时间 - 2022年4月12日</small>
+			                <h2><a href="blog-post.html">钛媒体科股早知道:NFT市场总交易额突破500亿美元</a></h2>
+			                <p>据NFTGo.io数据显示，NFT市场总交易额已突破500亿美元，截止目前为501.2亿美元，当前NFT市场总市值约为198.3亿美元。此外......</p>
+			                <ul>
+			                    <li>
+			                        <div class="thumb"><img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" class="lazy" alt="" width="68" height="68"></div> 钛媒体
+			                    </li>
+			                    <li><i class="bi bi-chat"></i>20</li>
+			                </ul>
+			            </div>
+			        </article>
+			        <!-- /article -->
+			    </div>
+			    <div class="col-lg-4" data-cue="slideInUp">
+			        <article class="blog">
+			            <figure>
+			                <a href="blog-post.html"><img src="static/picture/item-blog-placeholder.png" data-src="img/blog-4.jpg" alt="" class="lazy" width="800" height="533">
+			                </a>
+			            </figure>
+			            <div class="post_info">
+			                <small>时间 - 2022年4月7日</small>
+			                <h2><a href="blog-post.html">一家公司靠买画估值10亿美金，打法像VC</a></h2>
+			                <p>公司成立仅仅5年就已经实现了盈利。同时，在2021年10月，他们还拿到了Left Lane Capital领投的1.1亿美元A轮融资，估值10亿美元......</p>
+			                <ul>
+			                    <li>
+			                        <div class="thumb"><img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" class="lazy" alt="" width="68" height="68"></div> 猎云网
+			                    </li>
+			                    <li><i class="bi bi-chat"></i>56</li>
+			                </ul>
+			            </div>
+			        </article>
+			        <!-- /article -->
+			    </div>
+			    <div class="col-lg-4" data-cue="slideInUp">
+			        <article class="blog">
+			            <figure>
+			                <a href="blog-post.html"><img src="static/picture/item-blog-placeholder.png" data-src="img/blog-6.jpg" alt="" class="lazy" width="800" height="533">
+			                </a>
+			            </figure>
+			            <div class="post_info">
+			                <small>时间 - 2022年4月1日</small>
+			                <h2><a href="blog-post.html">新兴NFT成为亮点，线上艺术品交易持续增长</a></h2>
+			                <p>2021年，经销商和拍卖商的总销售额达到651亿美元，比2020年增长了29%，在经历了2020年的低迷之后，全球艺术市场强劲反弹。其中......</p>
+			                <ul>
+			                    <li>
+			                        <div class="thumb"><img src="static/picture/avatar-placeholder.png" data-src="img/avatar2.jpg" class="lazy" alt="" width="68" height="68"></div> 新浪网
+			                    </li>
+			                    <li><i class="bi bi-chat"></i>116</li>
+			                </ul>
+			            </div>
+			        </article>
+			        <!-- /article -->
+			    </div>
+			</div>
+			<!-- /row -->
+	    </div>
+	    <!-- /container -->
+
+	</main>
+	<!-- /main -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<h3>市场</h3>
+					<div class="links">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="grid-listing-1.html">探索</a></li>
+							<li><a href="login.html">登录</a></li>
+							<li><a href="register.html">注册</a></li>
+							<li><a href="contacts.html">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<h3>有用的链接</h3>
+					<div class="links">
+						<ul>
+							<li><a href="help.html">帮助中心</a></li>
+							<li><a href="connect-wallet.html">连接电子钱包</a></li>
+							<li><a href="help.html">常见问题解答</a></li>
+							<li><a href="pricing-tables-2.html">定价</a></li>
+							<li><a href="contacts.html">成为创作者</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<h3>资源</h3>
+					<div class="links">
+						<ul>
+							<li><a href="#0">博客</a></li>
+							<li><a href="#0">社区</a></li>
+							<li><a href="#0">最优惠价格</a></li>
+							<li><a href="#0">最新提交</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+				    <h3>保持联络</h3>
+				    <div id="newsletter">
+				        <div id="message-newsletter"></div>
+				        <form method="post" name="newsletter_form" id="newsletter_form">
+				            <div class="form-group">
+				                <input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="你的 email">
+				                <button type="submit" id="submit-newsletter"><i class="bi bi-chevron-right"></i></button>
+				            </div>
+				        </form>
+				    </div>
+				    <div class="follow_us">
+				        <ul>
+				            <li>
+				                <a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/QQ_icon.svg" alt="" class="lazy"></a>
+				            </li>
+				            <li>
+				                <a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/WeChat_icon.svg" alt="" class="lazy"></a>
+				            </li>
+				            <li>
+				                <a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/Weibo_icon.svg" alt="" class="lazy"></a>
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+			</div>
+			<!-- /row-->
+			<hr>
+			<div class="row add_bottom_25">
+				<div class="col-md-6">
+					<ul class="footer-selector clearfix">
+						<li>
+							<div class="styled-select lang-selector">
+								<select>
+									<option value="Chinese" selected="">简体中文</option>
+									<option value="English">English</option>
+									<option value="Spanish">Spanish</option>
+									<option value="Russian">Russian</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="additional_links">
+						<li><a href="#0">相关条款</a></li>
+						<li>© 2022 艺链平台</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/footer-->
+
+	<div id="toTop"></div><!-- Back to top button -->
+
+	<!-- Modal Bid -->
+    <div id="modal-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="modal_header">
+            <h3>Place a bid</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
+                <p>You are about to purchase <strong>"Amazing Art" #304</strong> from <strong>George Lucas</strong></p>
+                <div class="form-group">
+                    <label>Your bid (ETH)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Enter quantity <small>(10 available)</small></label>
+                    <input type="text" class="form-control">
+                </div>
+                <ul>
+                    <li>
+                        Your balance <span>8.498 ETH</span>
+                    </li>
+                    <li>
+                        Service fee 1.5%<span>0.125 ETH</span>
+                    </li>
+                    <li>
+                        You will pay<span>8.798 ETH</span>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <input type="submit" value="Place a bid" class="btn_1 full-width mb-2">
+                    <input type="submit" value="Cancel" class="btn_1 full-width outline">
+                </div>
+            </div>
+        </form>
+        <!--form -->
+    </div>
+    <!-- /Modal -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="static/js/common_scripts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="static/js/common_func.js"></script>
+
+</body>
+</html>
+<a href="https://beian.miit.gov.cn/ " target="_blank">豫ICP备2022014106号-1</a>
